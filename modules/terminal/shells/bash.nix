@@ -124,8 +124,7 @@ in {
           diff = "diff --color=auto";
 
           # NixOS management
-          cdnc = "cd /etc/nixos";
-          cdhm = "cd /etc/nixos/home-manager";
+          cdhm = "cd ${config.setup.homeManagerFlakePath}";
 
           # Single letters
           c = "cat";
