@@ -44,8 +44,12 @@
               homeManagerFlakePath = "${homeDirectory}/repos/standalone-home-manager";
 
               terminal.tools.nvim = "small";
-              maths.enable = true;
               programming.python = true;
+
+              maths = {
+                enable = true;
+                sage = false;
+              };
             };
 
             nix.settings.ssl-cert-file = "/etc/ssl/certs.pem";
