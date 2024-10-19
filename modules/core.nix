@@ -63,7 +63,7 @@
     # Garbage collect old packages every week
     gc = {
       automatic = true;
-      dates = "weekly";
+      frequency = "weekly";
       options = "--delete-older-than 14d";
     };
   };

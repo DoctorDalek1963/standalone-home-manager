@@ -24,7 +24,6 @@ in {
     ./lazygit.nix
     ./nvim.nix
     ./ripgrep.nix
-    ./tldr.nix
     ./yazi.nix
   ];
 
@@ -33,7 +32,8 @@ in {
       [nvimPkg]
       ++ lib.optional tt.hyperfine pkgs.hyperfine
       ++ lib.optional tt.sad pkgs.sad
-      ++ lib.optional tt.sd pkgs.sd;
+      ++ lib.optional tt.sd pkgs.sd
+      ++ lib.optional tt.tldr pkgs.tldr;
 
     sessionVariables.EDITOR = nvimPath;
   };

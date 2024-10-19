@@ -24,13 +24,10 @@
 
     ./modules/terminal
     ./modules/maths
-    ./modules/misc
     ./modules/programming
-    ./modules/secrets
   ];
   other-modules = [
     inputs.nix-index-database.hmModules.nix-index
-    inputs.sops-nix.homeManagerModules.sops
   ];
 in {
   imports = file-modules ++ other-modules;
