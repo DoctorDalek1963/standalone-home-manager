@@ -15,9 +15,10 @@
       statix
     ];
 
-    setup.terminal.shellAliases = {
+    setup.terminal.shellAliases = rec {
       n = "nix";
-      nhos = "FLAKE=/etc/nixos ${pkgs.nh}/bin/nh os";
+      nhhm = "FLAKE=${config.setup.homeManagerFlakePath} ${pkgs.nh}/bin/nh home";
+      nhos = nhhm; # Muscle memory
     };
   };
 }

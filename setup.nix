@@ -42,6 +42,9 @@ in {
     homeDirectory = mkOption {
       type = types.nonEmptyStr;
     };
+    homeManagerFlakePath = mkOption {
+      type = types.nonEmptyStr;
+    };
 
     # === Shell and terminal stuff
 

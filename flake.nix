@@ -37,9 +37,10 @@
         modules = [
           ./setup.nix
           {
-            setup = {
+            setup = rec {
               username = "u5503449";
               homeDirectory = "/dcs/24/u5503449";
+              homeManagerFlakePath = "${homeDirectory}/repos/standalone-home-manager";
 
               terminal.tools.nvim = "small";
               maths.enable = true;
