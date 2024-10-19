@@ -52,7 +52,6 @@
       # Use lots of extra caches
       substituters = [
         "https://cache.nixos.org"
-        "https://hydra.nixos.org"
         "https://nix-community.cachix.org"
         "https://doctordalek1963.cachix.org"
       ];
