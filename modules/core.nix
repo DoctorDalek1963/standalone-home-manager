@@ -34,6 +34,8 @@
   };
 
   nix = {
+    package = pkgs.nix;
+
     settings = {
       # Keep the nix store optimised
       auto-optimise-store = true;
