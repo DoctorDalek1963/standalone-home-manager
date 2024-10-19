@@ -47,7 +47,7 @@
               programming.python = true;
             };
 
-            nix.settings.ssl-certs = "/etc/ssl/certs.pem";
+            nix.settings.ssl-cert-file = "/etc/ssl/certs.pem";
           }
         ];
       };
