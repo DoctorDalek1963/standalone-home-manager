@@ -5,7 +5,7 @@
   ...
 }: let
   inherit (lib) mkOption types;
-  inherit (config.consts) valid-gnome-themes valid-terminal-themes valid-shells;
+  inherit (config.consts) valid-terminal-themes valid-shells;
 
   defaultTrue = mkOption {
     default = true;
@@ -20,7 +20,6 @@
     ./consts.nix
 
     ./modules/core.nix
-    ./modules/activation.nix
 
     ./modules/terminal
     ./modules/maths
