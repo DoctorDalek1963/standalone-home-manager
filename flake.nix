@@ -52,7 +52,7 @@
               };
             };
 
-            nix.settings.ssl-cert-file = "/etc/ssl/certs.pem";
+            nix.settings.ssl-cert-file = "/etc/ssl/cert.pem";
           }
         ];
       };
