@@ -18,6 +18,8 @@
     packages = with pkgs; [
       # wl-clipboard
       xclip
+
+      config.nix.package
     ];
 
     file = {
