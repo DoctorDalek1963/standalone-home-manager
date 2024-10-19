@@ -12,10 +12,7 @@
     }
     ."${cfg.theme}";
 
-  default-cursor-style =
-    if config.setup.isLaptop
-    then "SteadyBlock"
-    else "BlinkingBlock";
+  default-cursor-style = "BlinkingBlock";
 in {
   config = lib.mkIf cfg.emulators.wezterm {
     programs.wezterm = {
